@@ -1,0 +1,60 @@
+html {
+  font-family: $font-primary;
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  @include font-size(14, 18);
+  font-weight: $font-reg;
+  color: $font-color-primary;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+h1 {
+  @include font-size(58, 60);
+  font-weight: $font-reg;
+}
+
+h2 {
+  @include font-size(44, 48);
+  font-weight: $font-reg;
+}
+
+h3 {
+  @include font-size(33, 40);
+  font-weight: $font-reg;
+}
+
+h4 {
+  @include font-size(24, 32);
+  font-weight: $font-reg;
+}
+
+h5 {
+  @include font-size(18, 24);
+  font-weight: $font-reg;
+}
+
+h6 {
+  @include font-size(14, 24);
+}
+
+p,
+li {
+  @include font-size(14, 24);
+}
+
+a {
+  color: $font-color-primary;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $font-color-primary;
+  }
+}

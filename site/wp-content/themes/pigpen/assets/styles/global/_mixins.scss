@@ -1,0 +1,157 @@
+//decimal rounding function - used to limit decimal numbers in line height value
+
+@function decimal-round ($number, $digits: 0, $mode: round) {
+	$n: 1;
+	// $number must be a number
+	@if type-of($number) != number {
+		@warn '#{ $number } is not a number.';
+		@return $number;
+	}
+	// $digits must be a unitless number
+	@if type-of($digits) != number {
+		@warn '#{ $digits } is not a number.';
+		@return $number;
+	} @else if not unitless($digits) {
+		@warn '#{ $digits } has a unit.';
+		@return $number;
+	}
+	@for $i from 1 through $digits {
+		$n: $n * 10;
+	}
+	@if $mode == round {
+		@return round($number * $n) / $n;
+	} @else if $mode == ceil {
+		@return ceil($number * $n) / $n;
+	} @else if $mode == floor {
+		@return floor($number * $n) / $n;
+	} @else {
+		@warn '#{ $mode } is undefined keyword.';
+		@return $number;
+	}
+}
+//use the above function set line height relative rather than as a specific px value.
+@mixin font-size($sizeValue: 14, $lineHeight: null) {
+	font-size: $sizeValue + px;
+	font-size: ($sizeValue / 10) + rem;
+	@if ($lineHeight) {
+		//line height is now always relative
+		line-height: (decimal-round($lineHeight / $sizeValue, 3));
+	} @else {
+		line-height: 1.2;
+	}
+}
+/*Padding and Margin for REM with PX fallback*/
+@mixin addREM($property, $values...) {
+	$px: ();
+	$rem: ();
+	@each $value in $values {
+		@if $value == 0 or $value == auto {
+			$px: append($px, $value);
+			$rem: append($rem, $value);
+		} @else {
+			$px: append($px,  ($value + px));
+			$rem: append($rem,  ($value / 10 + rem));
+		}
+	}
+	#{$property}: $px;
+	#{$property}: $rem;
+}
+/*RGBA fallbacks for old browsers*/
+@mixin background-rgba($r, $g, $b, $a) {
+	background-color: rgb($r, $g, $b);
+	background-color: rgba($r, $g, $b, $a);
+}
+//Linear Gradient mixin
+//pass % you want color to change to function with the two colours
+@mixin linear-gradient($color-swap, $color-one, $color-two, $orientation) {
+	$primary-color: $color-one;
+	$secondary-color: $color-two;
+	$bg-color-change: $color-swap;
+	$bg-color-change-new: $color-swap + 0.1;
+
+	@if $orientation == horizontal {
+		$orientation: left;
+		$orientation-main: to right;
+	} @else {
+		$orientation: top;
+		$orientation-main: to bottom;
+	}
+
+	background-color: $primary-color;
+	background: -moz-linear-gradient(
+		$orientation,
+		$primary-color 0%,
+		$primary-color $bg-color-change,
+		$secondary-color $bg-color-change-new,
+		$secondary-color 100%
+	);
+	background: -webkit-linear-gradient(
+		$orientation,
+		$primary-color 0%,
+		$primary-color $bg-color-change,
+		$secondary-color $bg-color-change-new,
+		$secondary-color 100%
+	);
+	background: -o-linear-gradient(
+		$orientation,
+		$primary-color 0%,
+		$primary-color $bg-color-change,
+		$secondary-color $bg-color-change-new,
+		$secondary-color 100%
+	);
+	background: -ms-linear-gradient(
+		$orientation,
+		$primary-color 0%,
+		$primary-color $bg-color-change,
+		$secondary-color $bg-color-change-new,
+		$secondary-color 100%
+	);
+	background: linear-gradient(
+		$orientation-main,
+		$primary-color 0%,
+		$primary-color $bg-color-change,
+		$secondary-color $bg-color-change-new,
+		$secondary-color 100%
+	);
+}
+//font mixins
+@mixin font-primary-100 {
+	font-family: $font-primary-100;
+}
+@mixin font-primary-300 {
+	font-family: $font-primary-300;
+}
+@mixin font-primary-500 {
+	font-family: $font-primary-500;
+}
+@mixin font-primary-700 {
+	font-family: $font-primary-700;
+}
+@mixin font-secondary-100 {
+	font-family: $font-secondary-100;
+}
+@mixin font-secondary-300 {
+	font-family: $font-secondary-300;
+}
+@mixin font-secondary-500 {
+	font-family: $font-secondary-500;
+}
+@mixin font-secondary-700 {
+	font-family: $font-secondary-700;
+}
+@mixin font-tertiary {
+	font-family: $font-tertiary;
+}
+
+@mixin font-light {
+	font-weight: 300;
+}
+@mixin font-regular {
+	font-weight: 400;
+}
+@mixin font-semibold {
+	font-weight: 600;
+}
+@mixin font-bold {
+	font-weight: 700;
+}

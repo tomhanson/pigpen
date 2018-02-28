@@ -1,0 +1,19 @@
+.category-tab__img {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 0px solid $brand-primary;
+    transition: 0.2s border-width;
+  }
+
+  &:hover {
+    &:before {
+      border-width: 8px;
+    }
+  }
+}

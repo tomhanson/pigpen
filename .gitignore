@@ -1,0 +1,6 @@
+homestead/.vagrant
+homestead/vendor
+homestead/after.sh
+
+site/wp-content/uploads
+node_modules/

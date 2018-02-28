@@ -1,0 +1,22 @@
+//vendor files
+
+@import 'vendor/bootstrap/assets/stylesheets/bootstrap';
+
+//global variables and mixins
+@import 'global/_reset';
+@import 'global/_variables';
+@import 'global/_mixins';
+@import 'global/_fonts';
+@import 'global/_elements';
+@import 'global/_helpers';
+@import 'global/_icons';
+@import 'global/wp-classes';
+@import 'global/forms';
+//end globals
+
+//components
+
+@import 'components/main';
+
+//last minute over rides - should be empty but just in case
+@import 'global/_overrides';

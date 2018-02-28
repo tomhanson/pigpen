@@ -1,0 +1,92 @@
+[29-May-2017 01:16:56 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php on line 60
+[29-May-2017 22:25:24 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php on line 60
+[31-May-2017 11:08:40 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php on line 60
+[07-Jun-2017 04:19:38 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php on line 60
+[12-Jun-2017 06:08:39 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php on line 60
+[12-Jun-2017 17:32:43 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php on line 60
+[30-Jun-2017 17:46:13 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php on line 60
+[06-Jul-2017 19:18:50 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php on line 60
+[08-Jul-2017 23:10:19 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php on line 60
+[16-Sep-2017 14:36:15 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php on line 60
+[19-Sep-2017 16:33:59 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php on line 60
+[20-Sep-2017 06:34:27 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php on line 60
+[27-Sep-2017 00:44:54 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php on line 60
+[06-Oct-2017 16:26:50 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php on line 60
+[30-Oct-2017 13:29:48 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php on line 60
+[30-Oct-2017 13:30:44 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php on line 60
+[06-Nov-2017 08:12:14 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php on line 60
+[06-Nov-2017 08:12:14 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php on line 60
+[27-Nov-2017 11:22:21 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php on line 60
+[27-Nov-2017 11:22:34 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php on line 60
+[12-Jan-2018 19:52:23 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php on line 60
+[12-Jan-2018 19:52:24 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php on line 60
+[07-Feb-2018 21:46:59 Europe/London] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php:60
+Stack trace:
+#0 {main}
+  thrown in /home/wwwabbeymillhome/public_html/wp-content/plugins/hello.php on line 60

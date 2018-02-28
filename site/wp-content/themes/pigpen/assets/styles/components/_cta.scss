@@ -1,0 +1,9 @@
+.cta {
+}
+
+.cta__text {
+  &:first-letter {
+    @include font-size(44, 24);
+    color: $brand-primary;
+  }
+}

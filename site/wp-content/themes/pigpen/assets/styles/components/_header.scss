@@ -1,0 +1,4 @@
+.header--primary {
+  @include addREM(padding, 40);
+  min-height: 330px;
+}

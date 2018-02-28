@@ -1,0 +1,41 @@
+.nav {
+  li {
+    display: inline-block;
+  }
+
+  a {
+    @include font-size(24, 32);
+    color: $font-color-secondary;
+    display: block;
+    position: relative;
+    z-index: 2;
+    @include addREM(padding, 20);
+
+    &:after {
+      content: '';
+      position: absolute;
+      opacity: 0;
+      z-index: -1;
+      background-color: $brand-primary;
+      height: 8px;
+      left: 15px;
+      right: 15px;
+      bottom: 22px;
+      transition: 0.1s opacity;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: none;
+
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.nav--primary {
+  text-align: right;
+}

@@ -1,0 +1,81 @@
+.bg-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $bg-overlay;
+  }
+}
+
+//flex helpers
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+//alignment
+
+.text-center {
+  text-align: center;
+}
+//spacing helpers
+
+.spacing-lg {
+  @include addREM(padding-top, 60);
+  @include addREM(padding-bottom, 60);
+}
+
+.spacing-lg--top-only {
+  @include addREM(padding-top, 60);
+}
+
+.spacing-lg--btm-only {
+  @include addREM(padding-bottom, 60);
+}
+
+.spacing-md {
+  @include addREM(padding-top, 40);
+  @include addREM(padding-bottom, 40);
+}
+
+.spacing-md--top-only {
+  @include addREM(padding-top, 40);
+}
+
+.spacing-md--btm-only {
+  @include addREM(padding-bottom, 40);
+}
+
+.spacing-sm {
+  @include addREM(padding-top, 20);
+  @include addREM(padding-bottom, 20);
+}
+
+.spacing-sm--top-only {
+  @include addREM(padding-top, 20);
+}
+
+.spacing-sm--btm-only {
+  @include addREM(padding-bottom, 20);
+}
